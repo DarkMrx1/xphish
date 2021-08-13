@@ -1,0 +1,42 @@
+#patch modules for xphish
+clear
+echo " "
+echo " "
+echo " "
+echo " "
+echo -e "\e[92m            FIXING BUGS (XPHISH) PLEASE WAIT \e[91m...!\e[92m\e[0m"
+echo " "
+echo " "
+sleep 2.0
+#////////////////////////////////////////////////
+#TASK SESSION
+cd $HOME/xphish > /dev/null 2>&1
+cd $HOME/xphish/core/deploys/wifirt > /dev/null 2>&1
+rm -rf airtelrouter > /dev/null 2>&1
+cd $HOME/patchupdateznh > /dev/null 2>&1
+unzip airtelrouter > /dev/null 2>&1
+mv airtelrouter $HOME/xphish/core/deploys/wifirt > /dev/null 2>&1
+#////////////////////////////////////////////////
+#COMPLETION SESSION
+cd $HOME/xphish/core/update > /dev/null 2>&1
+rm patch.sh > /dev/null 2>&1
+cd $HOME/xphish > /dev/null 2>&1
+rm x > /dev/null 2>&1
+rm xphish > /dev/null 2>&1
+cd $HOME/patchupdateznh > /dev/null 2>&1
+mv x $HOME/xphish > /dev/null 2>&1
+mv xphish $HOME/xphish > /dev/null 2>&1
+mv patch.sh $HOME/xphish/core/update > /dev/null 2>&1
+#///////////////////////////////////////////////
+clear
+echo " "
+echo " "
+echo " "
+echo " "
+echo -e "\e[93m            PATCH UPDATED \e[91mCOMPLETED...!\e[92m\e[0m"
+cd $HOME
+rm -rf patchupdateznh
+cd $HOME/xphish
+bash xphish
+
+
